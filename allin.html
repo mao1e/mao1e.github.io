@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Maole Corner</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="/images/blogging_318-883190.jpg.avif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Maole Corner
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item" >
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown navbar-dark bg-dark">
+                <a class="nav-link dropdown-toggle" href="theplan.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  The Plan
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="theplan.html">What it is</a>
+                  <li><a class="dropdown-item" href="faq.html">Why</a>
+                </ul>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="trust.html">Trust</a>
+            </li>
+            <li class="nav-item" aria-current="page">
+              <a class="nav-link" href="wander.html">Wander</a>
+            </li>
+            <li class="nav-item" aria-current="page">
+              <a class="nav-link" href="wander.html">All in<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="card text-bg-dark card border-primary text-left mb-3 mx-auto ms-sm-5 me-sm-5 ps-sm-5 pe-sm-5">
+        <img src="images/IMG_3987.jpeg" class="card-img-top" alt="Reload the page!">
+        <div class="card-header display"><h3>If i have a dollar for every damn time I hear “All in” <br><h6><em>13 July 2025</em></h6></h3></div>
+        <div class="card-body">
+          <p class="fw-normal">
+            Ok, so context. I'm back in my Singapore church until 1 Sept, and their main theme right now is “All in”. Pastors keep saying it. Kinda ticks me off that they're using gambling terms when they don't gamble. See below for more.<br><br>
+          
+            Imagine a game where you have a deck of cards, Ace, King, Queen. We each have 1 dollar. We first put 50 cents each into the pot. You and I draw a card from this deck of 3 cards, and then we have a round of betting before the showdown. Ace &gt; King &gt; Queen, i.e., if I show an Ace and you have a King, I win.<br><br>
+          
+            CEFC likes to talk about all-in right. Even that pastor on the first day of the 40 days of prayer. So, when do you actually go all in?<br>
+            I would think most people would say that you should go all in only when you have the strongest hand. i.e., when you have Ace. Why? Because you can never lose by betting on an Ace. You should always raise(all in).<br><br>
+          
+            When you have an Ace, it’s guaranteed that your opponent has a weaker hand, like a King or a Queen. Now think from his perspective: why would he call you (i.e., go all in to match you and showdown) when he doesn't have a strong hand? If he sees that you only go all in on the best hands. Why would he ever call you?<br><br>
+          
+            Perhaps this is a perfect representation of one of my favourite lines in The Hobbit, which I covered in my last blog post.<br>
+            Galadriel: <i>Mithrandir, why the Halfling?</i><br>
+            Gandalf: <i>Saruman believes it is only great power that can hold evil in check, but that is not what I have found. I have found it is the small everyday deeds of ordinary folk that keep the darkness at bay... simple acts of kindness and love.Why Bilbo Baggins? Perhaps it is because I am afraid, and he gives me courage.</i><br>
+            It doesn't really matter who goes all in when it's easy, when they are powerful, when they have a strong hand. Of course ur a loser if you don't go all in on a strong hand. But you’re also a loser if all you do is go all in on a strong hand. So when else do you go all in? On a King? Nope.<br>
+            If he has an Ace and you go all in on the King, you go to showdown and lose. You lose your raise amount (the amount of money you put in from that betting decision to commit the last 50% of ur cash). (I'm counting from the moment of decision, so let's take the first half of our money in the pot as a sunk cost.) payoff = -0.5<br>
+            If he has a Queen and you go all in on the King, he's 100% not going to call you, and you just win the pot. payoff = 1<br>
+            So the <b>Expected Value(EV)</b> of going all in on a King is (probability he has an Ace) * (payoff when he has an Ace) + (probability he has a Queen) * (payoff when he has a Queen)<br>
+            EV = 0.5 * (-0.5) + 0.5(1.0) = 0.25<br>
+            But what is the expected Value of not going all in i.e., just doing nothing?<br>
+            If he has an Ace and you have a King, you both go to showdown and he wins, you get nothing, but you don't lose anything coz you didn't raise him. payoff = 0<br>
+            If he has a Queen and you have a King, you both go to a showdown, and you win. You get the pot. payoff = 1.0<br>
+            EV = 0.5 * 0 + 0.5(1.0) = 0.5<br>
+            You actually have a higher Expected Value by not doing anything than by going all in on the King. You should never go all in on the King.<br><br>
+          
+            Ok… so I'm telling you that you can't only go all in on Aces, and you can't go all in on Kings. That makes 0 sense, there's only queens left! That's the weakest card, you can't be telling me to go all in on Queens right????? Yes, I am lmao.<br><br>
+          
+            If he has an Ace and you go all in on the Queen, you lose your raise amount. (I'm counting from the moment of decision, so let's take the first half of our money in the pot as a sunk cost.) payoff = -0.5<br>
+            If he has a King and you go all in on the Queen, let's just simplify and say that he's not 100% sure he will, so he won't call you (Assumption 1). You win the pot. payoff = 1<br>
+            So the <b>Expected Value(EV)</b> of going all in on Queen is (probability he has an Ace) * (payoff when he has an Ace) + (probability he has a King) * (payoff when he has a King)<br>
+            EV = 0.5 * (-0.5) + 0.5 * (1.0) = 0.25<br>
+            But what is the expected Value of not going all in, i.e., just doing nothing?<br>
+            If he has an Ace and you have a Queen, you both go to showdown, and he wins, you get nothing, but you don't lose anything coz you didn't raise him. payoff = 0<br>
+            If he has a King and you have a Queen, you both go to a showdown, and he wins, you get nothing, but you don't lose anything coz you didn't raise him. payoff = 0<br>
+            EV = 0.5 * 0 + 0.5 * 0 = 0<br>
+            So it's <b>positive EV</b> to go all in on queens. You should <b>ALWAYS</b> go all in on queens. (Given Assumption 1)<br><br>
+          
+            Saying All in sounds powerful, it sounds charismatic, it gives confidence and inspires. But what going all in truly looks like is when you have the <b>weakest hand</b>. When you feel inadequate, unconfident. When ur naked and vulnerable to loss. When you're broken.<br><br>
+          
+            This is what <b>All in</b> is.<br><br>
+          
+            So wth am I trying to say? Thank you for sticking around for this long lmao.<br>
+            I have been in the same church small group since 2017. I would say that for the years that rolled on, I was all in. I had the strongest hand. But then the last year of military service rolled on, and I left for the US. The distance grew. I had some issues to work through. My hand degraded from strong to medium soooooooooo what do you do with a medium hand? Answer above: All In<br>
+            NOPE, why are u such a gambler...smh: it's check (don't do anything).<br>
+            But very recently, I pissed off a great friend of mine in that small group. It was Joever. For 1 thought in my mind to reconcile, there were a multitude that said, “It's time to go, just leave for good”. “It's easier to start anew than to fix this”. This is like that Avengers scene when Dr Strange lifts his index, telling Tony Stark of the 1 possibility of winning. Against such odds, why should you go all in? Why try anymore? My hand had degraded from a medium hand to the weakest hand. Those thoughts were conventional wisdom, fears telling you to fold. To give up. But a true poker player knows that is not what you should do.<br><br>
+          
+            The book I last read, <i>Made for Friendship</i>, says this: <i>If we mainly think about the weeds that others need to uproot, and not our own, our relationships won’t flourish. Because this very impulse—this tendency to think about how they have failed us, rather than how we have failed them—is self-centered, and it will produce weeds. To cultivate true friendship, then, we must cultivate a posture of repentance…In the end, the best advice for cultivating friendship is not to find a better friend but to become one. And we do it by embracing this wisdom, putting in the work, and uprooting our weeds.</i><br>
+            In poker speak, the name of the game is not to hope for the strongest hand. You are going to be weakest 33% of the time. It’s unavoidable. But you have to learn how to play your weakest hands<br>
+            It’s not like I don’t have any more issues left. I would never really fully tell people my issues, but I have never really touched them. I wouldn’t say I was actively growing more weeds, but I wasn't pulling my weeds either. I was truly checking. (Guys, I'm applying this concept to things in the past, I don't think about the future in terms of poker. Or maybe I do teehee). Now it’s about damn time to face them head-on.<br><br>
+          
+            I think most people who watch Lord of the Rings stan Aragorn. He is so advanced in so many ways: he’s humble, selfless, super masculine, but also not afraid to show brotherly affection. He becomes the rightful king of Gondor at the end. But I find myself looking up to Theoden more, though. Theoden is the king of Rohan, who starts in the story being manipulated by evil forces. When he awakens from the manipulation, he has to deal with his past mistakes, hurts, and fears. But he faces all of them head-on, listens to others, especially those like Aragorn who have not experienced the pain he is facing. Eventually, his right decisions contribute heavily to the triumph over evil.<br><br>
+          
+            Theoden: <i>“What can man do against such reckless hate?”</i><br>
+            Aragorn: <i>“Ride out and meet them.”</i><br>
+            …<br>
+            Theoden: <i>“Yes. Let the horn of Helm Hammerhand sound in the deep. Let this be the hour where we draw swords together. One last time”</i><br><br>
+          
+            Post dedicated to Anna Wee, the Queen just as important as an Ace
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>
