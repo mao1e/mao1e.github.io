@@ -25,3 +25,28 @@ body {
 .carousel-indicators {
     filter: invert(100%);
 }
+
+.math-number {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for numbers */
+    font-weight: bold;
+    color: #FFD700; /* Gold color, adjust as needed for your dark theme */
+    background-color: #333; /* Slightly darker background to make it pop */
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.math-variable {
+    font-family: 'Georgia', serif; /* A different font for variables */
+    font-style: italic;
+    font-weight: bold;
+    color: #ADD8E6; /* Light blue, adjust as needed */
+}
+
+/* You could also style the entire line containing math */
+.math-line {
+    background-color: #2a2a2a; /* A subtle background for the entire line */
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #007bff; /* A border to the left */
+    border-radius: 5px;
+}
